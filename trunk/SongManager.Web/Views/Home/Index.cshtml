@@ -1,0 +1,81 @@
+﻿@model SongManager.Web.Models.AlbumModel
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    int i=0,row ,cell=0;
+    if (Model.AlbumVCDs.Count % 4 == 0)
+    {
+        row = Model.AlbumVCDs.Count / 4;
+    }
+    else
+    {
+        row = (Model.AlbumVCDs.Count / 4) + 1;
+    }
+}
+<table width="650" border="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td background= "@Url.Content("~/Content/css/images/body_title_bg.png")" height="30">
+                <table width="530" border="0">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h1>
+                                    New Song</h1>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table border="0" width="100%">
+    <tbody>
+        <tr>
+            <td height="25" background="@Url.Content("~/Content/css/images/product_bg.png")">
+                <div class="product_title">
+                    <a href="#"><b>VCD</b></a>
+                </div>
+                <span style="text-align: right; float: right;"><a href="#" style="color: #333333;"><b>
+                    View All Town »</a> </a> </span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table width="100%" border="0">
+                    <tbody>
+                        @for(i=0;i<row;i++)
+                        {
+                            <tr>
+                            @for(int j=0;j<4;j++)
+                             {
+                                 if (cell<= @Model.AlbumVCDs.Count-1)
+                                 {
+                                  <td align="center" width="130" height="170" valign="top" style="font-size: 11px;
+                                    text-align: center;">
+                                    <div id="img_wrapper">
+                                        <div id="img_rollover">
+                                            <a href="#">
+                                                <br>
+                                                <img src="@Url.Content("~/Content/photo.png")" width="120" height="105" border="0" />
+                                            </a>
+                                        </div>
+                                        <b><font color="#ff3300" size="2">@Model.AlbumVCDs[cell].Production.ProductionName<br/>Vol:@Model.AlbumVCDs[cell].AlbumNum</font> </b>
+                                    </div>
+                                    
+                                </td>
+                                     cell++;
+                                 }
+                              
+                             }
+                             </tr>
+                        }                           
+                             
+                     
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table>

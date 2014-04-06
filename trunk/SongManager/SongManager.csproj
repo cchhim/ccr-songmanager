@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{05213A29-F772-429F-960C-39AE12A6F51E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SongManager</RootNamespace>
+    <AssemblyName>SongManager</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2">
+      <HintPath>..\Solution Items\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAlbum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAlbum.Designer.cs">
+      <DependentUpon>FormAlbum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCadance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCadance.Designer.cs">
+      <DependentUpon>FormCadance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMains.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMains.Designer.cs">
+      <DependentUpon>FormMains.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProduction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProduction.Designer.cs">
+      <DependentUpon>FormProduction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSinger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSinger.Designer.cs">
+      <DependentUpon>FormSinger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSongType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSongType.Designer.cs">
+      <DependentUpon>FormSongType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlayList.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Helper.cs" />
+    <Compile Include="Utils.cs" />
+    <Compile Include="WaterMarkTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="FormAlbum.resx">
+      <DependentUpon>FormAlbum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCadance.resx">
+      <DependentUpon>FormCadance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMains.resx">
+      <DependentUpon>FormMains.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProduction.resx">
+      <DependentUpon>FormProduction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSinger.resx">
+      <DependentUpon>FormSinger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSongType.resx">
+      <DependentUpon>FormSongType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SongManager.Core\SongManager.Core.csproj">
+      <Project>{F0F948B8-4582-4350-9AD2-1607C11C6795}</Project>
+      <Name>SongManager.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SongManager.Data\SongManager.Data.csproj">
+      <Project>{6B7F1109-AD79-40B2-863F-BB994BE8D4A5}</Project>
+      <Name>SongManager.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SongManager.Presenter\SongManager.Presenter.csproj">
+      <Project>{5FD20734-33F9-4625-9E90-47B935402C84}</Project>
+      <Name>SongManager.Presenter</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\Add.png" />
+    <Content Include="Images\Edit.png" />
+    <Content Include="Images\New.png" />
+    <Content Include="Images\Next16x16.png" />
+    <Content Include="Images\Pause16x16.png" />
+    <Content Include="Images\play.png" />
+    <Content Include="Images\Play16x16.png" />
+    <Content Include="Images\PlayList.png" />
+    <Content Include="Images\Previous16x16.png" />
+    <Content Include="Images\Remove.png" />
+    <Content Include="Images\Save.png" />
+    <Content Include="Images\Searchs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

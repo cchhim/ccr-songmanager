@@ -1,0 +1,8 @@
+E:\Project\SongManager\trunk\SongManager.Core\bin\Release\SongManager.Core.dll
+E:\Project\SongManager\trunk\SongManager.Core\bin\Release\SongManager.Core.pdb
+E:\Project\SongManager\trunk\SongManager.Core\bin\Release\FluentNHibernate.dll
+E:\Project\SongManager\trunk\SongManager.Core\bin\Release\NHibernate.dll
+E:\Project\SongManager\trunk\SongManager.Core\bin\Release\FluentNHibernate.xml
+E:\Project\SongManager\trunk\SongManager.Core\bin\Release\NHibernate.xml
+E:\Project\SongManager\trunk\SongManager.Core\obj\Release\SongManager.Core.dll
+E:\Project\SongManager\trunk\SongManager.Core\obj\Release\SongManager.Core.pdb
