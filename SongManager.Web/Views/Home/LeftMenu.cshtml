@@ -1,0 +1,21 @@
+﻿@model SongManager.Web.Models.MenuLeft
+@{
+    Layout = null;
+ }
+ <div>
+    <div>
+        @foreach (var production in Model.Productions) {
+             <div>
+                <h3>
+                    @Html.ActionLink(@production.ProductionName, "Production")
+                </h3>
+                <ul class="menu">
+                    @foreach (var songType in Model.SongTypes) 
+                    { 
+                        <li>@Html.ActionLink(@songType.SongTypeName,"Production")</li>        
+                    }
+                </ul>
+             </div>
+        }
+    </div>
+ </div>

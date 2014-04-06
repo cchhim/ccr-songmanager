@@ -1,0 +1,13 @@
+C:\Users\Chamroeun\Documents\Projects\SongManager\branches\SongManager.Presenter\bin\Debug\SongManager.Presenter.dll
+C:\Users\Chamroeun\Documents\Projects\SongManager\branches\SongManager.Presenter\bin\Debug\SongManager.Presenter.pdb
+C:\Users\Chamroeun\Documents\Projects\SongManager\branches\SongManager.Presenter\bin\Debug\SongManager.Core.dll
+C:\Users\Chamroeun\Documents\Projects\SongManager\branches\SongManager.Presenter\bin\Debug\FluentNHibernate.dll
+C:\Users\Chamroeun\Documents\Projects\SongManager\branches\SongManager.Presenter\bin\Debug\NHibernate.dll
+C:\Users\Chamroeun\Documents\Projects\SongManager\branches\SongManager.Presenter\bin\Debug\Iesi.Collections.dll
+C:\Users\Chamroeun\Documents\Projects\SongManager\branches\SongManager.Presenter\bin\Debug\SongManager.Core.pdb
+C:\Users\Chamroeun\Documents\Projects\SongManager\branches\SongManager.Presenter\bin\Debug\FluentNHibernate.xml
+C:\Users\Chamroeun\Documents\Projects\SongManager\branches\SongManager.Presenter\bin\Debug\NHibernate.xml
+C:\Users\Chamroeun\Documents\Projects\SongManager\branches\SongManager.Presenter\bin\Debug\Iesi.Collections.xml
+C:\Users\Chamroeun\Documents\Projects\SongManager\branches\SongManager.Presenter\obj\Debug\SongManager.Presenter.csprojResolveAssemblyReference.cache
+C:\Users\Chamroeun\Documents\Projects\SongManager\branches\SongManager.Presenter\obj\Debug\SongManager.Presenter.dll
+C:\Users\Chamroeun\Documents\Projects\SongManager\branches\SongManager.Presenter\obj\Debug\SongManager.Presenter.pdb
